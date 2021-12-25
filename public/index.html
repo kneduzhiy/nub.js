@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>nub.js Demo</title>
+  </head>
+
+  <body>
+    <app>
+      <n-var if="welcome.length > 0">welcome</n-var>
+      <br />
+      <p id="name" if="hasLength(name, 5)">
+        My name is: <strong><n-var>name</n-var></strong>
+      </p>
+      <br />
+      <input type="text" n-bind="name" />
+    </app>
+
+    <script src="dist/app.build.js"></script>
+  </body>
+</html>
